@@ -20,7 +20,7 @@ logging.basicConfig(level='INFO')
 newUserMessage = "A New user has joined!" # customise this to the message you want to send new users
 
 
-bot = commands.Bot(command_prefix="n!", description="help")
+bot = commands.Bot(command_prefix=".", description="help")
 
 @bot.command()
 async def mute(ctx,):
@@ -46,7 +46,7 @@ async def kick(ctx, member: discord.Member):
                 
 @bot.command()
 async def credits(ctx,):
-    await ctx.send('Created by cofix#3554')
+    await ctx.send('Made by cofix#3554')
 @bot.command()
 async def invite(ctx,):
     await ctx.send('https://discordapp.com/oauth2/authorize?&client_id=512866748165390348&scope=bot&permissions=268575766')
